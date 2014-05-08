@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>File</title>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
 </head>
 
 <body>
@@ -75,11 +75,14 @@ $last=$pages;
 if ($page > 1)
 {
 echo "<a href='table.php?page=".$first."'>首页</a> ";
+echo "&nbsp;&nbsp;";
 echo "<a href='table.php?page=".$prev."'>上一页</a> ";
+echo "&nbsp;&nbsp;";
 }
 if ($page < $pages)
 {
 echo "<a href='table.php?page=".$next."'>下一页</a>";
+echo "&nbsp;&nbsp;";
 echo "<a href='table.php?page=".$last."'>尾页</a> ";
 }
 echo "</div>";
